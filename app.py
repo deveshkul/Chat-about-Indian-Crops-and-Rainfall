@@ -101,7 +101,7 @@ if query:
                 st.write(f"{state} → Avg Production: {avg_prod:.2f}, Avg Yield: {avg_yield:.2f}")
 
     else:
-        st.write("🤖 **AI Analysis:**")
+         
         prompt = f"Question: {query}\nUse Indian crop and rainfall data contextually to give insights."
         output = generator(prompt, max_new_tokens=100, num_return_sequences=1)
         st.write(output[0]["generated_text"])
