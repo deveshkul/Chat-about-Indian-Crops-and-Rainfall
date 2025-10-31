@@ -10,7 +10,7 @@ st.set_page_config(page_title="India Crop & Rainfall As Per Data by Devesh", lay
 
 st.markdown("""
     <style>
-    /* Background GIF */
+    
     [data-testid="stAppViewContainer"] {
         background-image: url("https://preview.redd.it/need-advice-about-rain-sim-with-slow-motion-v0-1nkb022xlxkf1.gif?width=658&auto=webp&s=47bcdfc2926c93f21afb216be671550fdc4e7f51");
         background-size: cover;
@@ -19,7 +19,7 @@ st.markdown("""
         background-attachment: fixed;
     }
 
-    /* Transparent content box (Glassmorphism effect) */
+     
     .glass-card {
         background: rgba(255, 255, 255, 0.15);
         border-radius: 20px;
@@ -31,7 +31,7 @@ st.markdown("""
         box-shadow: 0 4px 30px rgba(0,0,0,0.2);
     }
 
-    /* Title styling */
+     
     h1 {
         color: #ffffff;
         text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
@@ -39,13 +39,13 @@ st.markdown("""
         font-size: 3rem;
     }
 
-    /* Sidebar styling */
+    
     [data-testid="stSidebar"] {
         background: rgba(0, 0, 0, 0.4);
         color: white;
     }
 
-    /* Slider styling */
+     
     .stSlider > div > div > div > div {
         background: linear-gradient(90deg, #00c6ff, #0072ff);
     }
@@ -67,7 +67,7 @@ rainfall_df, crop_df = load_data()
 generator = pipeline("text-generation", model="distilgpt2")
 
  
-st.title("India Crop and Rainfall Comparison By Devesh")
+st.title("India Crop and Rainfall Chat Prototype By Devesh")
 st.write("Ask any question about rainfall or crop data in India. Example: *'Tell me how much crop Goa and Maharashtra produce.'*")
 st.write(" Data used from https://www.data.gov.in/ ")
 
